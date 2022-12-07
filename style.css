@@ -1,3 +1,9 @@
+:root {
+    --main-colour: #1992D4;
+    --secondary-colour: #f1f5f9;
+    --tertiary-colour: #cbd5e1;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,26 +14,85 @@
 body {
     display: grid;
     /* grid-template-columns: minmax(500px), repeat(3,1fr); */
-    grid-template-columns: 280px repeat(3,1fr);
+    grid-template-columns: 230px repeat(3,1fr);
     /* gap: 10px; */
     width: 100vw;
     height: 100vh;
 }
 
 
-/* HEADER */
+/* -------------- HEADER -------------- */
 
 .header {
-    background-color: peachpuff ;
+    background-color: var(--secondary-colour) ;
+    gap: 10px;
+    
     grid-area: 1 / 2 / span 1 / span 3;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
 }
 
-/* SIDEBAR */
+.search {
+    display: grid;
+    grid-template-columns: 50px 0.9fr;
+    align-items: center;
+    justify-content: start;
+    margin-left: 5%;
+}
+
+.search input {
+    height: 20px;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+.user-management {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.greeting {
+
+}
+
+.user-btn {
+
+}
+
+/* -------------- SIDEBAR -------------- */
 
 .sidebar {
-    background-color: salmon;
+    background-color: var(--main-colour);
     grid-area: 1 / 1 / span 3 / span 1;
+
+    display: grid;
+    grid-template-rows: 50px 1fr;
 }
+
+
+#logo-img  {
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+}
+
+#logo-name {
+    font-weight: 900;
+    font-size: 20px;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    filter: invert(100%) sepia(0%) saturate(7422%) hue-rotate(41deg) brightness(119%) contrast(100%);
+}
+
 
 .menu {
     display: grid;
@@ -38,9 +103,14 @@ body {
     font-weight: 900;
 }
 
+.menu.logo {
+    outline: solid 1px red;
+}
+
 .menu > p,
 .menu > img {
     align-self: center;
+    filter: invert(100%) sepia(0%) saturate(7422%) hue-rotate(41deg) brightness(119%) contrast(100%);
 }
 
 .menu > img {
@@ -52,11 +122,9 @@ img.icon {
     height: 25px;
 }
 
-/* MAIN CONTENT */
+/* -------------- MAIN CONTENT -------------- */
 
 .main-content {
-    background-color: aqua ;
-    outline: solid 1px red;
 
     grid-area: 2 / 2 / span 2 / span 3;
 
@@ -65,7 +133,7 @@ img.icon {
 }
 
 .projects {
-    background-color: aliceblue;
+    background-color: var(--tertiary-colour);
 
     grid-area: 1 / 1 / span 2 / span 2;
 }
