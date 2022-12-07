@@ -2,6 +2,7 @@
     --main-colour: #1992D4;
     --secondary-colour: #f1f5f9;
     --tertiary-colour: #cbd5e1;
+    --icon-filter: invert(100%) sepia(0%) saturate(7422%) hue-rotate(41deg) brightness(119%) contrast(100%);
 }
 
 * {
@@ -14,12 +15,16 @@
 body {
     display: grid;
     /* grid-template-columns: minmax(500px), repeat(3,1fr); */
-    grid-template-columns: 230px repeat(3,1fr);
+    grid-template-columns: 200px repeat(3,1fr);
     /* gap: 10px; */
     width: 100vw;
     height: 100vh;
 }
 
+img.icon {
+    width: 25px;
+    height: 25px;
+}
 
 /* -------------- HEADER -------------- */
 
@@ -70,57 +75,44 @@ body {
     grid-area: 1 / 1 / span 3 / span 1;
 
     display: grid;
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 1fr 6fr;
 }
 
-
-#logo-img  {
-    height: 50px;
-    width: 50px;
-    margin-right: 15px;
+.logo-container,
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
 }
 
-#logo-name {
-    font-weight: 900;
-    font-size: 20px;
-
-}
-
-.logo {
+.logo,
+.menu {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    filter: invert(100%) sepia(0%) saturate(7422%) hue-rotate(41deg) brightness(119%) contrast(100%);
+    filter: var(--icon-filter);
 }
 
+.logo {
+    gap: 10px;
+    margin: 10px 15px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#logo-img  {
+    height: 40px;
+    width: 40px;
+}
 
 .menu {
-    display: grid;
-    justify-items: start; 
-    grid-template-columns: 1fr 1fr;
-    margin: 25px 25px;
-    font-size: 14px;
-    font-weight: 900;
+    gap: 25px;
+    margin: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
 }
 
-.menu.logo {
-    outline: solid 1px red;
-}
-
-.menu > p,
-.menu > img {
-    align-self: center;
-    filter: invert(100%) sepia(0%) saturate(7422%) hue-rotate(41deg) brightness(119%) contrast(100%);
-}
-
-.menu > img {
-    margin-left: 25px;
-}
-
-img.icon {
-    width: 25px;
-    height: 25px;
-}
 
 /* -------------- MAIN CONTENT -------------- */
 
