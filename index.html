@@ -8,29 +8,36 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <title>Document</title>
 </head>
+
+
 <body>
     <div class="header">
-        <div class="search">
-            <img class = "icon" src="icons/search.svg" alt="A search icon for the searchbox">
-            <input type="search">
+        <div class="header-top">
+                <div class="search-bar">
+                    <img class = "icon" src="icons/search.svg" alt="A search icon for the header's searchbox">
+                    <input type="search">
+                </div>
+                <div class="user-management">
+                    <img class="icon" src="icons/notification.svg" alt="A notification bell for the header">
+                    <img class="profile-pic" src="imgs/andrew.png"></img>
+                    <p>Andrew Tan</p>
+                </div>
         </div>
-        <div class="user-management">
-            <img class="icon" src="icons/notification.svg" alt="A notification bell for the header">
-            <div class="profile-pic">Placeholder Picture</div>
-            <p>Andrew Tan</p>
-        </div>
-        <div class="greeting">
-            <div class="profile-pic">Placeholder Picture</div>
-            <p>Hi there,</p>
-            <p>Andrew Tan</p>
-        </div>
-        <div class="user-btns">
-            <button>New</button>
-            <button>Upload</button>
+        <div class="header-bottom">
+            <div class="greeting">
+                <img class="profile-pic" src="imgs/andrew.png"></img>
+                <p class="greeting-intro">Hi there,</p>
+                <p class="greeting-name">Andrew Tan (@atwycodes)</p>
+            </div>
+            <div class="user-btns">
+                <button>New</button>
+                <button>Upload</button>
+                <button id="remove-btn">Remove</button>
+            </div>
         </div>
     </div>
 
-
+    
     <div class="sidebar">
         <section class="logo-container">
             <div class="logo">
