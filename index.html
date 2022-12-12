@@ -6,170 +6,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <title>Document</title>
+    <title>Admin Dashboard</title>
 </head>
 
 
-<body>
-    <div class="header">
-        <div class="header-top">
-                <div class="search-bar">
-                    <img class = "icon" src="icons/search.svg" alt="A search icon for the header's searchbox">
-                    <input type="search">
-                </div>
-                <div class="user-management">
-                    <img class="icon" src="icons/notification.svg" alt="A notification bell for the header">
-                    <img class="profile-pic" src="imgs/andrew.png"></img>
-                    <p>Andrew Tan</p>
-                </div>
+<body class>
+    <section class="sidebar">
+        <div class="sidebar__logo-wrapper">
+            <img src="icons/dashboard.svg" alt="" class="sidebar__logo-image">
+            <div class="sidebar__logo-name">Andrew</div>
         </div>
-        <div class="header-bottom">
-            <div class="greeting">
-                <img class="profile-pic" src="imgs/andrew.png"></img>
-                <p class="greeting-intro">Hi there,</p>
-                <p class="greeting-name">Andrew Tan (@atwycodes)</p>
+        <div class="sidebar__menu-container">
+            <div class="sidebar__menu-wrapper">
+                <img src="icons/home.svg" alt="" class="sidebar__menu-image">
+                <div class="sidebar__menu-name">Home</div>
             </div>
-            <div class="user-btns">
-                <button>New</button>
-                <button>Upload</button>
-                <button id="remove-btn">Remove</button>
+            <div class="sidebar__menu-wrapper">
+                <img src="icons/account.svg" alt="" class="sidebar__menu-image">
+                <div class="sidebar__menu-name">Profile</div>
+            </div>
+            <div class="sidebar__menu-wrapper">
+                <img src="icons/message.svg" alt="" class="sidebar__menu-image">
+                <div class="sidebar__menu-name">Messages</div>
+            </div>
+            <div class="sidebar__menu-wrapper">
+                <img src="icons/history.svg" alt="" class="sidebar__menu-image">
+                <div class="sidebar__menu-name">History</div>
+            </div>
+            <div class="sidebar__menu-wrapper">
+                <img src="icons/task.svg" alt="" class="sidebar__menu-image">
+                <div class="sidebar__menu-name">Tasks</div>
+            </div>
+            <div class="sidebar__menu-wrapper">
+                <img src="icons/community.svg" alt="" class="sidebar__menu-image">
+                <div class="sidebar__menu-name">Communities</div>
+            </div>
+            <div class="sidebar__menu-wrapper">
+                <img src="icons/settings.svg" alt="" class="sidebar__menu-image">
+                <div class="sidebar__menu-name">Settings</div>
+            </div>
+            <div class="sidebar__menu-wrapper">
+                <img src="icons/support.svg" alt="" class="sidebar__menu-image">
+                <div class="sidebar__menu-name">Support</div>
+            </div>
+            <div class="sidebar__menu-wrapper">
+                <img src="icons/privacy.svg" alt="" class="sidebar__menu-image">
+                <div class="sidebar__menu-name">Privacy</div>
             </div>
         </div>
-    </div>
-
-    
-    <div class="sidebar">
-        <section class="logo-container">
-            <div class="logo">
-                <img id = "logo-img" class = "icon" src="icons/dashboard.svg" alt="A dashboard icon for the sidebar">
-                <p id="logo-name">Andrew</p>
-            </div>
-        </section>
-        <section class="menu-container">
-            <div class="menu">
-                <img class = "icon" src="icons/home.svg" alt="A home icon for the sidebar">
-                <p>Home</p>
-            </div>
-            <div class="menu">
-                <img class = "icon" src="icons/account.svg" alt="A profile icon for the sidebar">
-                <p>Profile</p>
-            </div>
-            <div class="menu">
-                <img class = "icon" src="icons/message.svg" alt="A message icon for the sidebar">
-                <p>Messages</p>
-            </div>
-            <div class="menu">
-                <img class = "icon" src="icons/history.svg" alt="A history icon for the sidebar">
-                <p>History</p>
-            </div>
-            <div class="menu">
-                <img class = "icon" src="icons/task.svg" alt="A task icon for the sidebar">
-                <p>Tasks</p>
-            </div>
-            <div class="menu">
-                <img class = "icon" src="icons/community.svg" alt="A community icon for the sidebar">
-                <p>Communities</p>
-            </div>
-            <div class="menu">
-                <img class = "icon" src="icons/settings.svg" alt="A settings icon for the sidebar">
-                <p>Settings</p>
-            </div>
-            <div class="menu">
-                <img class = "icon" src="icons/support.svg" alt="A support icon for the sidebar">
-                <p>Support</p>
-            </div>
-            <div class="menu">
-                <img class = "icon" src="icons/privacy.svg" alt="A privacy icon for the sidebar">
-                <p>Privacy</p>
-            </div>
-        </section>
-    </div>
+    </section>
 
 
-    <div class="main-content">
-        
-        <div class="projects">
-            <p>Your Projects</p>
-            <section class="project-card-container">
-                <div class="project-card">
-                    <p class="project-card-title">Project A</p>
-                    <p class="project-card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <img class="card-icon" src="icons/favourite.svg" alt="A favourite icon for the card">
-                    <img class="card-icon" src="icons/share.svg" alt="A share icon for the card">
-                </div>
-                <div class="project-card">
-                    <p class="project-card-title">Project A</p>
-                    <p class="project-card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <img class="card-icon" src="icons/favourite.svg" alt="A favourite icon for the card">
-                    <img class="card-icon" src="icons/share.svg" alt="A share icon for the card">
-                </div>
-                <div class="project-card">
-                    <p class="project-card-title">Project A</p>
-                    <p class="project-card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <img class="card-icon" src="icons/favourite.svg" alt="A favourite icon for the card">
-                    <img class="card-icon" src="icons/share.svg" alt="A share icon for the card">
-                </div>
-                <div class="project-card">
-                    <p class="project-card-title">Project A</p>
-                    <p class="project-card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <img class="card-icon" src="icons/favourite.svg" alt="A favourite icon for the card">
-                    <img class="card-icon" src="icons/share.svg" alt="A share icon for the card">
-                </div>
-                <div class="project-card">
-                    <p class="project-card-title">Project A</p>
-                    <p class="project-card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <img class="card-icon" src="icons/favourite.svg" alt="A favourite icon for the card">
-                    <img class="card-icon" src="icons/share.svg" alt="A share icon for the card">
-                </div>
-                <div class="project-card">
-                    <p class="project-card-title">Project A</p>
-                    <p class="project-card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <img class="card-icon" src="icons/favourite.svg" alt="A favourite icon for the card">
-                    <img class="card-icon" src="icons/share.svg" alt="A share icon for the card">
-                </div>
-            </section>
+    <section class="header">
+        <div class="header__user-input-container">
+            <div class="header__search-wrapper">
+                <img src="icons/search.svg" alt="" class="header__search-image">
+                <input type="searchbox" placeholder="Search for your projects..." class="header__search-bar">
+            </div>
+            <div class="header__button-wrapper">
+                <button class="header__button">New</button>
+                <button class="header__button">Upload</button>
+                <button class="header__button header__button--red">Remove</button>
+            </div>
         </div>
-        
-        <div class="announcements">
-            <p>Announcements</p>
+        <div class="header__user-management-container">
+            <div class="header__user-management-wrapper">
+                <img src="icons/notification.svg" alt="" class="header__notification-image">
+                <img src="imgs/andrew.png" alt="" class="header__profile-image">
+            </div>
+        </div>
+    </section>
 
-            <section class="announcement-card-container">
-                <div class="announcement-card">
-                    <p class="announcement-card-title">Site Maintenance</p>
-                    <p class="announcement-card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-                <div class="announcement-card">
-                    <p class="announcement-card-title">Site Maintenance</p>
-                    <p class="announcement-card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-                <div class="announcement-card">
-                    <p class="announcement-card-title">Site Maintenance</p>
-                    <p class="announcement-card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-            </section>
-        </div>
 
-        
-        <div class="trending">
-            <p>Trending</p>
-            <section class="trending-card-container">
-                <div class="trending-card">
-                    <div class="trending-card-img">Placeholder Image</div>
-                    <p class="trending-card-handle">@placeholder</p>
-                    <p class="trending-card-project">Placeholder Project Name</p>
+    <section class="project">
+        <div class="project__container">
+            <div class="project__title">
+                Your Projects
+            </div>
+            <div class="project__card-container">
+                <div class="project__card-wrapper"> 
+                    <div class="project__card-color-wrapper"></div>
+                    <div class="project__card-text-wrapper">
+                        <div class="project__card-title">Sample Project 1</div>
+                        <div class="project__card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet possimus, suscipit rem aliquid voluptatem vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut distinctio non fuga eum! Accusamus, quae? Atque ut at id consequatur.</div>
+                    </div>
+                    <div class="project__card-icon-wrapper">
+                        <img class="project__icon-image icon" src="icons/favourite.svg" alt="A favourite icon for the card">
+                        <img class="project__icon-image icon" src="icons/share.svg" alt="A share icon for the card">
+                    </div>
                 </div>
-                <div class="trending-card">
-                    <div class="trending-card-img">Placeholder Image</div>
-                    <p class="trending-card-handle">@placeholder</p>
-                    <p class="trending-card-project">Placeholder Project Name</p>
+                <div class="project__card-wrapper">
+                    <div class="project__card-color-wrapper"></div>
+                    <div class="project__card-text-wrapper">
+                        <div class="project__card-title">Sample Project 2</div>
+                        <div class="project__card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet possimus, suscipit rem aliquid voluptatem vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut distinctio non fuga eum! Accusamus, quae? Atque ut at id consequatur.</div>
+                    </div>
+                    <div class="project__card-icon-wrapper">
+                        <img class="project__icon-image icon" src="icons/favourite.svg" alt="A favourite icon for the card">
+                        <img class="project__icon-image icon" src="icons/share.svg" alt="A share icon for the card">
+                    </div>
                 </div>
-                <div class="trending-card">
-                    <div class="trending-card-img">Placeholder Image</div>
-                    <p class="trending-card-handle">@placeholder</p>
-                    <p class="trending-card-project">Placeholder Project Name</p>
+                <div class="project__card-wrapper">
+                    <div class="project__card-color-wrapper"></div>
+                    <div class="project__card-text-wrapper">
+                        <div class="project__card-title">Sample Project 3</div>
+                        <div class="project__card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet possimus, suscipit rem aliquid voluptatem vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut distinctio non fuga eum! Accusamus, quae? Atque ut at id consequatur.</div>
+                    </div>
+                    <div class="project__card-icon-wrapper">
+                        <img class="project__icon-image icon" src="icons/favourite.svg" alt="A favourite icon for the card">
+                        <img class="project__icon-image icon" src="icons/share.svg" alt="A share icon for the card">
+                    </div>
                 </div>
-            </section>
+                <div class="project__card-wrapper">
+                    <div class="project__card-color-wrapper"></div>
+                    <div class="project__card-text-wrapper">
+                        <div class="project__card-title">Sample Project 4</div>
+                        <div class="project__card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet possimus, suscipit rem aliquid voluptatem vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut distinctio non fuga eum! Accusamus, quae? Atque ut at id consequatur.</div>
+                    </div>
+                    <div class="project__card-icon-wrapper">
+                        <img class="project__icon-image icon" src="icons/favourite.svg" alt="A favourite icon for the card">
+                        <img class="project__icon-image icon" src="icons/share.svg" alt="A share icon for the card">
+                    </div>
+                </div>
+                <div class="project__card-wrapper">
+                    <div class="project__card-color-wrapper"></div>
+                    <div class="project__card-text-wrapper">
+                        <div class="project__card-title">Sample Project 5</div>
+                        <div class="project__card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet possimus, suscipit rem aliquid voluptatem vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut distinctio non fuga eum! Accusamus, quae? Atque ut at id consequatur.</div>
+                    </div>
+                    <div class="project__card-icon-wrapper">
+                        <img class="project__icon-image icon" src="icons/favourite.svg" alt="A favourite icon for the card">
+                        <img class="project__icon-image icon" src="icons/share.svg" alt="A share icon for the card">
+                    </div>
+                </div>
+                <div class="project__card-wrapper">
+                    <div class="project__card-color-wrapper"></div>
+                    <div class="project__card-text-wrapper">
+                        <div class="project__card-title">Sample Project 6</div>
+                        <div class="project__card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet possimus, suscipit rem aliquid voluptatem vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut distinctio non fuga eum! Accusamus, quae? Atque ut at id consequatur.</div>
+                    </div>
+                    <div class="project__card-icon-wrapper">
+                        <img class="project__icon-image icon" src="icons/favourite.svg" alt="A favourite icon for the card">
+                        <img class="project__icon-image icon" src="icons/share.svg" alt="A share icon for the card">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+
+    <section class="announcement">
+        <div class="announcement__title">Announcements</div>
+        <div class="announcement__card-container">
+            <div class="announcement__card-wrapper">
+                <div class="announcement__card-title">Sample Announcement 1</div>
+                <div class="announcement__card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            </div>
+            <div class="announcement__card-wrapper">
+                <div class="announcement__card-title">Sample Announcement 2</div>
+                <div class="announcement__card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            </div>
+            <div class="announcement__card-wrapper">
+                <div class="announcement__card-title">Sample Announcement 3</div>
+                <div class="announcement__card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="trending">
+        <div class="trending__title">Trending</div>
+        <div class="trending__card-container">
+            <div class="trending__card-wrapper">
+                <img src="imgs/andrew.png" alt="" class="trending__image">
+                <div class="trending__card-title">Sample Trending 1</div>
+            </div>
+            <div class="trending__card-wrapper">
+                <img src="imgs/andrew.png" alt="" class="trending__image">
+                <div class="trending__card-title">Sample Trending 2</div>
+            </div>
+            <div class="trending__card-wrapper">
+                <img src="imgs/andrew.png" alt="" class="trending__image">
+                <div class="trending__card-title">Sample Trending 3</div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
